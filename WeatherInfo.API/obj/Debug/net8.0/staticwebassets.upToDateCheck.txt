@@ -1,0 +1,7 @@
+wwwroot\icons\clear.png
+wwwroot\icons\cloudy.png
+wwwroot\icons\drizzle.png
+wwwroot\icons\fog.png
+wwwroot\icons\rain.png
+wwwroot\icons\rain_snowers.png
+wwwroot\icons\snow.png

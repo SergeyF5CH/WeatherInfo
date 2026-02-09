@@ -1,0 +1,112 @@
+[
+  {
+    "ContainingType": "WeatherInfo.API.Controllers.StatsController",
+    "Method": "GetResult",
+    "RelativePath": "api/stats/requests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "from",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WeatherInfo.API.Controllers.StatsController",
+    "Method": "GetTopCities",
+    "RelativePath": "api/stats/top-cities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "from",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WeatherInfo.API.Controllers.WeatherController",
+    "Method": "GetWeatherByDate",
+    "RelativePath": "api/weather/{city}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "date",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WeatherInfo.API.Controllers.WeatherController",
+    "Method": "GetWeatherByWeek",
+    "RelativePath": "api/weather/{city}/week",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WeatherInfo.API.Controllers.WeatherController",
+    "Method": "GetWeatherWeekChart",
+    "RelativePath": "api/weather/{city}/week/chart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
