@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using WeatherInfo.API.DbContexts;
 using WeatherInfo.API.Dtos;
@@ -7,6 +8,7 @@ namespace WeatherInfo.API.Controllers
 {
     [ApiController]
     [Route("api/stats")]
+    [EnableRateLimiting("PerIp60PerMinute")]
     public class StatsController : ControllerBase
     {
         private readonly WeatherInfoContext _context;

@@ -13,6 +13,7 @@
                 61 or 63 or 65 => "rain",
                 71 or 73 or 75 => "snow",
                 80 or 81 or 82 => "rain_snowers",
+                95 or 96 or 99 => "thunderstorm",
                 _ => "cloudy"
             };
         }

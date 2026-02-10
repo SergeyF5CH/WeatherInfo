@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using WeatherInfo.API.Extensions;
 using WeatherInfo.API.Infrastructure;
 using WeatherInfo.API.Services;
@@ -7,6 +8,7 @@ namespace WeatherInfo.API.Controllers
 {
     [ApiController]
     [Route("api/weather")]
+    [EnableRateLimiting("PerIp60PerMinute")]
     public class WeatherController : ControllerBase
     {
         private readonly IWeatherService _weatherService;

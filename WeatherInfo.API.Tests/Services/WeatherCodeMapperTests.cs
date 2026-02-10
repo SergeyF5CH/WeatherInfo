@@ -12,6 +12,7 @@ namespace WeatherInfo.API.Tests.Services
         [InlineData(63, "rain")]
         [InlineData(71, "snow")]
         [InlineData(80, "rain_snowers")]
+        [InlineData(95, "thunderstorm")]
         [InlineData(999, "cloudy")]
         public void Map_ValidData_ReturnsCorrectIconCode(int code, string expected)
         {

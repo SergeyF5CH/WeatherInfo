@@ -6,6 +6,7 @@ using Microsoft.Extensions.FileProviders;
 using Polly;
 using Polly.Extensions.Http;
 using Serilog;
+using System.Threading.RateLimiting;
 using WeatherInfo.API.DbContexts;
 using WeatherInfo.API.HealthChecks;
 using WeatherInfo.API.Middleware;
@@ -37,6 +38,27 @@ builder.Services.AddHealthChecks()
 builder.Services.AddControllers(options =>
     options.ModelBinderProviders.Insert(0, new DateOnlyModelBinderProvider())
 );
+
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddPolicy("PerIp60PerMinute", context =>
+    {
+        var ip = context.Connection.RemoteIpAddress?.ToString() ?? "unknown";
+
+        return RateLimitPartition.GetFixedWindowLimiter(
+            partitionKey: ip,
+            factory: _ => new FixedWindowRateLimiterOptions
+            {
+                PermitLimit = 60,
+                Window = TimeSpan.FromMinutes(1),
+                QueueLimit = 0,
+                QueueProcessingOrder = QueueProcessingOrder.OldestFirst
+            });
+    });
+
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
@@ -149,6 +171,8 @@ app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseRateLimiter();
 
 app.MapControllers();
 

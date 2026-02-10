@@ -5,3 +5,4 @@ wwwroot\icons\fog.png
 wwwroot\icons\rain.png
 wwwroot\icons\rain_snowers.png
 wwwroot\icons\snow.png
+wwwroot\icons\thunderstorm.png
