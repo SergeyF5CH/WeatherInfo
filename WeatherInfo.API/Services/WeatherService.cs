@@ -1,18 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json.Linq;
+using Serilog;
 using System.Diagnostics;
-using System.Runtime;
-using System.Threading.Tasks;
 using WeatherInfo.API.Caching;
 using WeatherInfo.API.Dtos;
 using WeatherInfo.API.Entities;
-using WeatherInfo.API.Exceptions;
 using WeatherInfo.API.Options;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-
 
 namespace WeatherInfo.API.Services
 {
@@ -80,7 +73,7 @@ namespace WeatherInfo.API.Services
                 "day", 
                 cityNormalized, 
                 date,
-                cacheHit, 
+                cacheHit,
                 (int)sw.ElapsedMilliseconds);
        
             return result;
@@ -129,7 +122,7 @@ namespace WeatherInfo.API.Services
                 "week", 
                 cityNormalized, 
                 null, 
-                cacheHit, 
+                cacheHit,
                 (int)sw.ElapsedMilliseconds);
 
             return result;
@@ -162,7 +155,12 @@ namespace WeatherInfo.API.Services
                 });
             
             sw.Stop();
-            await LogRequestAsync("week-chart", cityNormalized, null, cacheHit, (int)sw.ElapsedMilliseconds);
+            await LogRequestAsync(
+                "week-chart", 
+                cityNormalized, 
+                null, 
+                cacheHit,
+                (int)sw.ElapsedMilliseconds);
             
             return result;
         }
@@ -237,6 +235,15 @@ namespace WeatherInfo.API.Services
 
         private async Task LogRequestAsync(string endpoint, string cityNormalized, DateOnly? date, bool cacheHit, int latencyMs)
         {
+            var cacheStatus = cacheHit ? "TRUE" : "FALSE";
+
+            Log.Information("Endpoint = {Endpoint}, City = {City}, Date = {Date}, Latency = {Latency}ms, CacheHit = {CacheStatus}",
+                endpoint, 
+                cityNormalized,
+                date?.ToString("yyyy-MM-dd") ?? "-",
+                latencyMs,
+                cacheStatus);
+
             await _requestLogger.LogAsync(new WeatherRequestLog
             {
                 TimestampUtc = DateTime.UtcNow,
@@ -244,7 +251,6 @@ namespace WeatherInfo.API.Services
                 City = cityNormalized,
                 Date = null,
                 CacheHit = cacheHit,
-                StatusCode = 200,
                 LatencyMs = latencyMs
             });
         }
