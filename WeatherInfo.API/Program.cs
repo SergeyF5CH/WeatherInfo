@@ -129,7 +129,12 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath = "/static/icons",
     FileProvider = new PhysicalFileProvider(
         Path.Combine(Directory.GetCurrentDirectory(), "wwwroot","icons")),
-    ContentTypeProvider = provider
+    ContentTypeProvider = provider,
+    OnPrepareResponse = ctx =>
+    {
+        ctx.Context.Response.Headers.CacheControl = 
+            "public, max-age=2592000";
+    }
 });
 
 // Configure the HTTP request pipeline.

@@ -168,3 +168,4 @@ C:\Sergey\WeatherInfo\WeatherInfo.API\obj\Debug\net8.0\WeatherInfo.API.genruntim
 C:\Sergey\WeatherInfo\WeatherInfo.API\obj\Debug\net8.0\ref\WeatherInfo.API.dll
 C:\Sergey\WeatherInfo\WeatherInfo.API\bin\Debug\net8.0\HealthChecks.Sqlite.dll
 C:\Sergey\WeatherInfo\WeatherInfo.API\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+C:\Sergey\WeatherInfo\WeatherInfo.API\obj\Debug\net8.0\WeatherInfo.API.sourcelink.json

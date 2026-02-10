@@ -180,3 +180,4 @@ C:\Sergey\WeatherInfo\WeatherInfo.API.Tests\obj\Debug\net8.0\WeatherInfo.API.Tes
 C:\Sergey\WeatherInfo\WeatherInfo.API.Tests\obj\Debug\net8.0\ref\WeatherInfo.API.Tests.dll
 C:\Sergey\WeatherInfo\WeatherInfo.API.Tests\bin\Debug\net8.0\HealthChecks.Sqlite.dll
 C:\Sergey\WeatherInfo\WeatherInfo.API.Tests\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
+C:\Sergey\WeatherInfo\WeatherInfo.API.Tests\obj\Debug\net8.0\WeatherInfo.API.Tests.sourcelink.json
