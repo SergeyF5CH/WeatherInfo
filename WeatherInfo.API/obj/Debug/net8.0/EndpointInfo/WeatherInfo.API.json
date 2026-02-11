@@ -5,6 +5,27 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/cities/search": {
+      "get": {
+        "tags": [
+          "Cities"
+        ],
+        "parameters": [
+          {
+            "name": "city",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/stats/top-cities": {
       "get": {
         "tags": [

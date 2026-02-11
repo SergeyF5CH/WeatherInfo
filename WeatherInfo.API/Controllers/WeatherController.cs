@@ -19,7 +19,7 @@ namespace WeatherInfo.API.Controllers
         }
 
         [HttpGet("{city}")]
-        [ResponseCache(Duration = 3600, Location = ResponseCacheLocation.Any)]
+        //[ResponseCache(Duration = 3600, Location = ResponseCacheLocation.Any)]
         public async Task<IActionResult> GetWeatherByDate(
             string city,
             [FromQuery] DateOnly? date)
@@ -48,7 +48,7 @@ namespace WeatherInfo.API.Controllers
         }
 
         [HttpGet("{city}/week")]
-        [ResponseCache(Duration = 3600, Location = ResponseCacheLocation.Any)]
+        //[ResponseCache(Duration = 3600, Location = ResponseCacheLocation.Any)]
         public async Task<IActionResult> GetWeatherByWeek(string city)
         {
             var result = await _weatherService.GetWeatherWeekAsync(city);

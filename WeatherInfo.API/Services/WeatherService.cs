@@ -74,7 +74,8 @@ namespace WeatherInfo.API.Services
                 cityNormalized, 
                 date,
                 cacheHit,
-                (int)sw.ElapsedMilliseconds);
+                (int)sw.ElapsedMilliseconds,
+                200);
        
             return result;
         }
@@ -123,7 +124,8 @@ namespace WeatherInfo.API.Services
                 cityNormalized, 
                 null, 
                 cacheHit,
-                (int)sw.ElapsedMilliseconds);
+                (int)sw.ElapsedMilliseconds,
+                200);
 
             return result;
         }
@@ -160,7 +162,8 @@ namespace WeatherInfo.API.Services
                 cityNormalized, 
                 null, 
                 cacheHit,
-                (int)sw.ElapsedMilliseconds);
+                (int)sw.ElapsedMilliseconds,
+                200);
             
             return result;
         }
@@ -233,25 +236,34 @@ namespace WeatherInfo.API.Services
             return $"weather-{type}:open-meteo:{city}:{date}";
         }
 
-        private async Task LogRequestAsync(string endpoint, string cityNormalized, DateOnly? date, bool cacheHit, int latencyMs)
+        private async Task LogRequestAsync(
+            string endpoint, 
+            string cityNormalized, 
+            DateOnly? date, 
+            bool cacheHit, 
+            int latencyMs,
+            int statusCode)
         {
             var cacheStatus = cacheHit ? "TRUE" : "FALSE";
 
-            Log.Information("Endpoint = {Endpoint}, City = {City}, Date = {Date}, Latency = {Latency}ms, CacheHit = {CacheStatus}",
+            Log.Information(
+                "Endpoint = {Endpoint}, City = {City}, Date = {Date}, Latency = {Latency}ms, CacheHit = {CacheStatus}, StatusCode = {StatusCode}",
                 endpoint, 
                 cityNormalized,
                 date?.ToString("yyyy-MM-dd") ?? "-",
+                cacheStatus,
                 latencyMs,
-                cacheStatus);
+                statusCode);
 
             await _requestLogger.LogAsync(new WeatherRequestLog
             {
                 TimestampUtc = DateTime.UtcNow,
                 Endpoint = endpoint,
                 City = cityNormalized,
-                Date = null,
+                Date = date,
                 CacheHit = cacheHit,
-                LatencyMs = latencyMs
+                LatencyMs = latencyMs,
+                StatusCode = statusCode
             });
         }
     }

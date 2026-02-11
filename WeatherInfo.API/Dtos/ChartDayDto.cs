@@ -2,7 +2,7 @@
 {
     public class ChartDayDto
     {
-        public DateOnly Date {  get; set; }
+        public DateOnly Date { get; set; }
         public double TemperatureC { get; set; }
     }
 }

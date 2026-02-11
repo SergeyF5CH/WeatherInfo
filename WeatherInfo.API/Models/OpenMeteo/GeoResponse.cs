@@ -1,4 +1,6 @@
-﻿namespace WeatherInfo.API.Models.OpenMeteo
+﻿using System.Text.Json.Serialization;
+
+namespace WeatherInfo.API.Models.OpenMeteo
 {
     public class GeoResponse
     {
@@ -7,6 +9,7 @@
 
     public class GeoResult
     {
+        [JsonPropertyName("name")]
         public string City { get; set; } = string.Empty;
         public double Latitude { get; set; }
         public double Longitude { get; set; }

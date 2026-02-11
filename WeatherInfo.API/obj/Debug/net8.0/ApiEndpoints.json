@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "WeatherInfo.API.Controllers.CitiesController",
+    "Method": "Search",
+    "RelativePath": "api/cities/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WeatherInfo.API.Controllers.StatsController",
     "Method": "GetResult",
     "RelativePath": "api/stats/requests",
@@ -9,12 +25,12 @@
     "Parameters": [
       {
         "Name": "from",
-        "Type": "System.DateOnly",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
         "Name": "to",
-        "Type": "System.DateOnly",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
@@ -40,12 +56,12 @@
     "Parameters": [
       {
         "Name": "from",
-        "Type": "System.DateOnly",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
         "Name": "to",
-        "Type": "System.DateOnly",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {

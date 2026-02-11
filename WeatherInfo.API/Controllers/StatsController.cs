@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using WeatherInfo.API.DbContexts;
 using WeatherInfo.API.Dtos;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WeatherInfo.API.Controllers
 {
@@ -20,17 +21,22 @@ namespace WeatherInfo.API.Controllers
 
         [HttpGet("top-cities")]
         public async Task<IActionResult> GetTopCities(
-            [FromQuery] DateOnly from,
-            [FromQuery] DateOnly to,
+            [FromQuery] DateOnly? from,
+            [FromQuery] DateOnly? to,
             [FromQuery] int limit = 10)
         {
-            if(from > to)
+            if (!from.HasValue || !to.HasValue)
+            {
+                return BadRequest("Query parameters 'from' and 'to' are required and must be valid dates.");
+            }
+
+            if (from > to)
             {
                 return BadRequest("'from' must be earlier than 'to'");
             }
 
-            var fromUtc = from.ToDateTime(TimeOnly.MinValue);
-            var toUtc = to.ToDateTime(TimeOnly.MaxValue);
+            var fromUtc = from.Value.ToDateTime(TimeOnly.MinValue);
+            var toUtc = to.Value.ToDateTime(TimeOnly.MaxValue);
 
             var result = await _context.WeatherRequests
                 .Where(x => x.TimestampUtc >= fromUtc && x.TimestampUtc <= toUtc)
@@ -49,11 +55,16 @@ namespace WeatherInfo.API.Controllers
 
         [HttpGet("requests")]
         public async Task<IActionResult> GetResult(
-            [FromQuery] DateOnly from,
-            [FromQuery] DateOnly to,
+            [FromQuery] DateOnly? from,
+            [FromQuery] DateOnly? to,
             [FromQuery] int page = 1,
             [FromQuery] int pageSize = 10)
         {
+            if (!from.HasValue || !to.HasValue)
+            {
+                return BadRequest("Query parameters 'from' and 'to' are required and must be valid dates.");
+            }
+
             if (from > to)
             {
                 return BadRequest("'From' must be earlier than 'to'");
@@ -63,8 +74,8 @@ namespace WeatherInfo.API.Controllers
                 return BadRequest("Page and pageSize must be positive");
             }
 
-            var fromUtc = from.ToDateTime(TimeOnly.MinValue);
-            var toUtc = to.ToDateTime(TimeOnly.MaxValue);
+            var fromUtc = from.Value.ToDateTime(TimeOnly.MinValue);
+            var toUtc = to.Value.ToDateTime(TimeOnly.MaxValue);
 
             var query = _context.WeatherRequests
                 .Where(x => x.TimestampUtc >= fromUtc && x.TimestampUtc <= toUtc)

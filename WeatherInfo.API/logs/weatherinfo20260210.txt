@@ -13943,3 +13943,270 @@ RETURNING "Id";
 2026-02-10 17:16:08.453 +03:00 [DBG] Connection id "0HNJ8LPOI1N8J" stopped.
 2026-02-10 17:16:10.991 +03:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
 2026-02-10 17:16:10.992 +03:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0028ms - processed: 0 items - remaining: 1 items
+2026-02-10 17:20:06.167 +03:00 [DBG] Registered model binder providers, in the following order: ["WeatherInfo.API.ModelBinders.DateOnlyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-02-10 17:20:06.243 +03:00 [DBG] Hosting starting
+2026-02-10 17:20:06.345 +03:00 [INF] Now listening on: https://localhost:7198
+2026-02-10 17:20:06.349 +03:00 [INF] Now listening on: http://localhost:5288
+2026-02-10 17:20:06.349 +03:00 [DBG] Loaded hosting startup assembly WeatherInfo.API
+2026-02-10 17:20:06.350 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-02-10 17:20:06.350 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-02-10 17:20:06.351 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-02-10 17:20:06.373 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 17:20:06.374 +03:00 [INF] Hosting environment: Development
+2026-02-10 17:20:06.375 +03:00 [INF] Content root path: C:\Sergey\WeatherInfo\WeatherInfo.API
+2026-02-10 17:20:06.375 +03:00 [DBG] Hosting started
+2026-02-10 17:20:06.437 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6G" received FIN.
+2026-02-10 17:20:06.440 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6G" accepted.
+2026-02-10 17:20:06.441 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6G" started.
+2026-02-10 17:20:06.448 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-10 17:20:06.465 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6G" stopped.
+2026-02-10 17:20:06.468 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-10 17:20:06.762 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6H" accepted.
+2026-02-10 17:20:06.764 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6H" started.
+2026-02-10 17:20:06.798 +03:00 [DBG] Connection 0HNJ8LTUL6Q6H established using the following protocol: "Tls13"
+2026-02-10 17:20:06.828 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7198/swagger/index.html - null null
+2026-02-10 17:20:06.918 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-10 17:20:06.930 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-02-10 17:20:06.931 +03:00 [DBG] Request did not match any endpoints
+2026-02-10 17:20:06.935 +03:00 [DBG] The request path  does not match the path filter
+2026-02-10 17:20:06.965 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-02-10 17:20:06.966 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-02-10 17:20:06.976 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-02-10 17:20:06.976 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-02-10 17:20:06.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7198/swagger/index.html - 200 null text/html;charset=utf-8 152.8648ms
+2026-02-10 17:20:07.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7198/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-10 17:20:07.009 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7198/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 6.0814ms
+2026-02-10 17:20:07.029 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7198/_vs/browserLink - null null
+2026-02-10 17:20:07.131 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7198/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.9409ms
+2026-02-10 17:20:07.158 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7198/swagger/v1/swagger.json - null null
+2026-02-10 17:20:07.161 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-02-10 17:20:07.162 +03:00 [DBG] Request did not match any endpoints
+2026-02-10 17:20:07.163 +03:00 [DBG] The request path  does not match the path filter
+2026-02-10 17:20:07.170 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7198/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.7884ms
+2026-02-10 17:20:42.240 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6I" accepted.
+2026-02-10 17:20:42.241 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6I" received FIN.
+2026-02-10 17:20:42.241 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6I" started.
+2026-02-10 17:20:42.241 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6J" accepted.
+2026-02-10 17:20:42.245 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-10 17:20:42.246 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6J" started.
+2026-02-10 17:20:42.247 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6I" stopped.
+2026-02-10 17:20:42.248 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-10 17:20:42.250 +03:00 [DBG] Connection 0HNJ8LTUL6Q6J established using the following protocol: "Tls13"
+2026-02-10 17:20:42.253 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7198/static/icons/thunderstorm.png - null null
+2026-02-10 17:20:42.255 +03:00 [DBG] No candidates found for the request path '/static/icons/thunderstorm.png'
+2026-02-10 17:20:42.255 +03:00 [DBG] Request did not match any endpoints
+2026-02-10 17:20:42.263 +03:00 [INF] Sending file. Request path: '/thunderstorm.png'. Physical path: 'C:\Sergey\WeatherInfo\WeatherInfo.API\wwwroot\icons\thunderstorm.png'
+2026-02-10 17:20:42.265 +03:00 [DBG] Connection id "0HNJ8LTUL6Q6J" completed keep alive response.
+2026-02-10 17:20:42.265 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7198/static/icons/thunderstorm.png - 200 2497 image/png 12.2227ms
+2026-02-10 17:21:28.650 +03:00 [DBG] Registered model binder providers, in the following order: ["WeatherInfo.API.ModelBinders.DateOnlyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-02-10 17:21:28.769 +03:00 [DBG] Hosting starting
+2026-02-10 17:21:28.877 +03:00 [INF] Now listening on: https://localhost:7198
+2026-02-10 17:21:28.878 +03:00 [INF] Now listening on: http://localhost:5288
+2026-02-10 17:21:28.879 +03:00 [DBG] Loaded hosting startup assembly WeatherInfo.API
+2026-02-10 17:21:28.880 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-02-10 17:21:28.881 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-02-10 17:21:28.882 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-02-10 17:21:28.906 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 17:21:28.907 +03:00 [INF] Hosting environment: Development
+2026-02-10 17:21:28.908 +03:00 [INF] Content root path: C:\Sergey\WeatherInfo\WeatherInfo.API
+2026-02-10 17:21:28.909 +03:00 [DBG] Hosting started
+2026-02-10 17:21:29.082 +03:00 [DBG] Connection id "0HNJ8LUN9BT70" received FIN.
+2026-02-10 17:21:29.085 +03:00 [DBG] Connection id "0HNJ8LUN9BT70" accepted.
+2026-02-10 17:21:29.087 +03:00 [DBG] Connection id "0HNJ8LUN9BT70" started.
+2026-02-10 17:21:29.095 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-10 17:21:29.116 +03:00 [DBG] Connection id "0HNJ8LUN9BT70" stopped.
+2026-02-10 17:21:29.119 +03:00 [DBG] Connection id "0HNJ8LUN9BT70" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-10 17:21:29.373 +03:00 [DBG] Connection id "0HNJ8LUN9BT71" accepted.
+2026-02-10 17:21:29.376 +03:00 [DBG] Connection id "0HNJ8LUN9BT71" started.
+2026-02-10 17:21:29.404 +03:00 [DBG] Connection 0HNJ8LUN9BT71 established using the following protocol: "Tls13"
+2026-02-10 17:21:29.437 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7198/swagger/index.html - null null
+2026-02-10 17:21:29.531 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-10 17:21:29.544 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-02-10 17:21:29.546 +03:00 [DBG] Request did not match any endpoints
+2026-02-10 17:21:29.549 +03:00 [DBG] The request path  does not match the path filter
+2026-02-10 17:21:29.584 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-02-10 17:21:29.586 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-02-10 17:21:29.599 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-02-10 17:21:29.601 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-02-10 17:21:29.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7198/swagger/index.html - 200 null text/html;charset=utf-8 170.6645ms
+2026-02-10 17:21:29.646 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7198/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-10 17:21:29.660 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7198/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 14.1818ms
+2026-02-10 17:21:29.679 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7198/_vs/browserLink - null null
+2026-02-10 17:21:29.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7198/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.482ms
+2026-02-10 17:21:29.782 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7198/swagger/v1/swagger.json - null null
+2026-02-10 17:21:29.784 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-02-10 17:21:29.785 +03:00 [DBG] Request did not match any endpoints
+2026-02-10 17:21:29.786 +03:00 [DBG] The request path  does not match the path filter
+2026-02-10 17:21:29.791 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7198/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.0561ms
+2026-02-10 17:21:43.715 +03:00 [DBG] Connection id "0HNJ8LUN9BT72" accepted.
+2026-02-10 17:21:43.716 +03:00 [DBG] Connection id "0HNJ8LUN9BT72" started.
+2026-02-10 17:21:43.716 +03:00 [DBG] Connection id "0HNJ8LUN9BT72" received FIN.
+2026-02-10 17:21:43.716 +03:00 [DBG] Connection id "0HNJ8LUN9BT73" accepted.
+2026-02-10 17:21:43.721 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-10 17:21:43.722 +03:00 [DBG] Connection id "0HNJ8LUN9BT73" started.
+2026-02-10 17:21:43.723 +03:00 [DBG] Connection id "0HNJ8LUN9BT72" stopped.
+2026-02-10 17:21:43.724 +03:00 [DBG] Connection id "0HNJ8LUN9BT72" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-10 17:21:43.727 +03:00 [DBG] Connection 0HNJ8LUN9BT73 established using the following protocol: "Tls13"
+2026-02-10 17:21:43.731 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7198/api/weather/Москва?date=2026-02-05 - null null
+2026-02-10 17:21:43.734 +03:00 [DBG] 1 candidate(s) found for the request path '/api/weather/Москва'
+2026-02-10 17:21:43.736 +03:00 [DBG] Endpoint 'WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API)' with route pattern 'api/weather/{city}' is valid for the request path '/api/weather/Москва'
+2026-02-10 17:21:43.738 +03:00 [DBG] Request matched endpoint 'WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API)'
+2026-02-10 17:21:43.739 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-02-10 17:21:43.740 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-02-10 17:21:43.746 +03:00 [INF] Executing endpoint 'WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API)'
+2026-02-10 17:21:43.759 +03:00 [INF] Route matched with {action = "GetWeatherByDate", controller = "Weather"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetWeatherByDate(System.String, System.Nullable`1[System.DateOnly]) on controller WeatherInfo.API.Controllers.WeatherController (WeatherInfo.API).
+2026-02-10 17:21:43.761 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-10 17:21:43.761 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-10 17:21:43.762 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter"]
+2026-02-10 17:21:43.763 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-10 17:21:43.765 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-10 17:21:43.767 +03:00 [DBG] Executing controller factory for controller WeatherInfo.API.Controllers.WeatherController (WeatherInfo.API)
+2026-02-10 17:21:43.824 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-02-10 17:21:43.830 +03:00 [DBG] Executed controller factory for controller WeatherInfo.API.Controllers.WeatherController (WeatherInfo.API)
+2026-02-10 17:21:43.838 +03:00 [DBG] Attempting to bind parameter 'city' of type 'System.String' ...
+2026-02-10 17:21:43.840 +03:00 [DBG] Attempting to bind parameter 'city' of type 'System.String' using the name 'city' in request data ...
+2026-02-10 17:21:43.841 +03:00 [DBG] Done attempting to bind parameter 'city' of type 'System.String'.
+2026-02-10 17:21:43.842 +03:00 [DBG] Done attempting to bind parameter 'city' of type 'System.String'.
+2026-02-10 17:21:43.842 +03:00 [DBG] Attempting to validate the bound parameter 'city' of type 'System.String' ...
+2026-02-10 17:21:43.845 +03:00 [DBG] Done attempting to validate the bound parameter 'city' of type 'System.String'.
+2026-02-10 17:21:43.847 +03:00 [DBG] Attempting to bind parameter 'date' of type 'System.Nullable`1[System.DateOnly]' ...
+2026-02-10 17:21:43.851 +03:00 [DBG] Done attempting to bind parameter 'date' of type 'System.Nullable`1[System.DateOnly]'.
+2026-02-10 17:21:43.851 +03:00 [DBG] Attempting to validate the bound parameter 'date' of type 'System.Nullable`1[System.DateOnly]' ...
+2026-02-10 17:21:43.852 +03:00 [DBG] Done attempting to validate the bound parameter 'date' of type 'System.Nullable`1[System.DateOnly]'.
+2026-02-10 17:21:43.864 +03:00 [INF] Start processing HTTP request GET https://geocoding-api.open-meteo.com/v1/search?name=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&count=1&language=ru
+2026-02-10 17:21:43.870 +03:00 [INF] Sending HTTP request GET https://geocoding-api.open-meteo.com/v1/search?name=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&count=1&language=ru
+2026-02-10 17:21:44.213 +03:00 [INF] Received HTTP response headers after 341.4281ms - 200
+2026-02-10 17:21:44.216 +03:00 [INF] End processing HTTP request after 352.7508ms - 200
+2026-02-10 17:21:44.226 +03:00 [INF] Start processing HTTP request GET https://api.open-meteo.com/v1/forecast?latitude=55.75222&longitude=37.61556&daily=temperature_2m_max,weathercode&timezone=Europe/London&start_date=2026-02-05&end_date=2026-02-05
+2026-02-10 17:21:44.227 +03:00 [INF] Sending HTTP request GET https://api.open-meteo.com/v1/forecast?latitude=55.75222&longitude=37.61556&daily=temperature_2m_max,weathercode&timezone=Europe/London&start_date=2026-02-05&end_date=2026-02-05
+2026-02-10 17:21:44.534 +03:00 [INF] Received HTTP response headers after 306.6893ms - 200
+2026-02-10 17:21:44.536 +03:00 [INF] End processing HTTP request after 309.5951ms - 200
+2026-02-10 17:21:44.542 +03:00 [INF] Endpoint = day, City = Москва, Date = 2026-02-05, Latency = 686ms, CacheHit = FALSE
+2026-02-10 17:21:44.760 +03:00 [DBG] Entity Framework Core 8.0.0 initialized 'WeatherInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.0' with options: None
+2026-02-10 17:21:44.780 +03:00 [DBG] 'WeatherInfoContext' generated a temporary value for the property 'WeatherRequestLog.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-02-10 17:21:44.811 +03:00 [DBG] Context 'WeatherInfoContext' started tracking 'WeatherRequestLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-02-10 17:21:44.813 +03:00 [DBG] SaveChanges starting for 'WeatherInfoContext'.
+2026-02-10 17:21:44.815 +03:00 [DBG] DetectChanges starting for 'WeatherInfoContext'.
+2026-02-10 17:21:44.823 +03:00 [DBG] DetectChanges completed for 'WeatherInfoContext'.
+2026-02-10 17:21:44.854 +03:00 [DBG] Creating DbConnection.
+2026-02-10 17:21:44.859 +03:00 [DBG] Created DbConnection. (4ms).
+2026-02-10 17:21:44.861 +03:00 [DBG] Opening connection to database 'main' on server 'WeatherInfo.db'.
+2026-02-10 17:21:44.868 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Sergey\WeatherInfo\WeatherInfo.API\WeatherInfo.db'.
+2026-02-10 17:21:44.872 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-10 17:21:44.875 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2026-02-10 17:21:44.877 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-02-10 17:21:44.881 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (Size = 6), @p2='?' (DbType = Date), @p3='?' (Size = 3), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "WeatherRequests" ("CacheHit", "City", "Date", "Endpoint", "LatencyMs", "StatusCode", "TimestampUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2026-02-10 17:21:44.893 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (Size = 6), @p2='?' (DbType = Date), @p3='?' (Size = 3), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "WeatherRequests" ("CacheHit", "City", "Date", "Endpoint", "LatencyMs", "StatusCode", "TimestampUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2026-02-10 17:21:44.902 +03:00 [DBG] The foreign key property 'WeatherRequestLog.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-02-10 17:21:44.907 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Sergey\WeatherInfo\WeatherInfo.API\WeatherInfo.db'.
+2026-02-10 17:21:44.910 +03:00 [DBG] A data reader for 'main' on server 'C:\Sergey\WeatherInfo\WeatherInfo.API\WeatherInfo.db' is being disposed after spending 13ms reading results.
+2026-02-10 17:21:44.912 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Sergey\WeatherInfo\WeatherInfo.API\WeatherInfo.db'.
+2026-02-10 17:21:44.914 +03:00 [DBG] Closed connection to database 'main' on server 'WeatherInfo.db' (1ms).
+2026-02-10 17:21:44.921 +03:00 [DBG] An entity of type 'WeatherRequestLog' tracked by 'WeatherInfoContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-02-10 17:21:44.922 +03:00 [DBG] SaveChanges completed for 'WeatherInfoContext' with 1 entities written to the database.
+2026-02-10 17:21:44.929 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-10 17:21:44.931 +03:00 [DBG] No information found on request to perform content negotiation.
+2026-02-10 17:21:44.932 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-10 17:21:44.933 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-10 17:21:44.934 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-10 17:21:44.935 +03:00 [INF] Executing OkObjectResult, writing value of type 'WeatherInfo.API.Dtos.WeatherDayDto'.
+2026-02-10 17:21:44.943 +03:00 [INF] Executed action WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API) in 1176.061ms
+2026-02-10 17:21:44.944 +03:00 [INF] Executed endpoint 'WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API)'
+2026-02-10 17:21:44.946 +03:00 [DBG] Connection id "0HNJ8LUN9BT73" completed keep alive response.
+2026-02-10 17:21:44.948 +03:00 [DBG] 'WeatherInfoContext' disposed.
+2026-02-10 17:21:44.950 +03:00 [DBG] Disposing connection to database 'main' on server 'WeatherInfo.db'.
+2026-02-10 17:21:44.952 +03:00 [DBG] Disposed connection to database 'main' on server 'WeatherInfo.db' (1ms).
+2026-02-10 17:21:44.953 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7198/api/weather/Москва?date=2026-02-05 - 200 null application/json; charset=utf-8 1222.2393ms
+2026-02-10 17:22:00.819 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7198/api/weather/Москва?date=2026-02-05 - null null
+2026-02-10 17:22:00.821 +03:00 [DBG] 1 candidate(s) found for the request path '/api/weather/Москва'
+2026-02-10 17:22:00.822 +03:00 [DBG] Endpoint 'WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API)' with route pattern 'api/weather/{city}' is valid for the request path '/api/weather/Москва'
+2026-02-10 17:22:00.823 +03:00 [DBG] Request matched endpoint 'WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API)'
+2026-02-10 17:22:00.823 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-02-10 17:22:00.824 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-02-10 17:22:00.824 +03:00 [INF] Executing endpoint 'WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API)'
+2026-02-10 17:22:00.825 +03:00 [INF] Route matched with {action = "GetWeatherByDate", controller = "Weather"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetWeatherByDate(System.String, System.Nullable`1[System.DateOnly]) on controller WeatherInfo.API.Controllers.WeatherController (WeatherInfo.API).
+2026-02-10 17:22:00.826 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-10 17:22:00.827 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-10 17:22:00.828 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter"]
+2026-02-10 17:22:00.829 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-10 17:22:00.830 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-10 17:22:00.831 +03:00 [DBG] Executing controller factory for controller WeatherInfo.API.Controllers.WeatherController (WeatherInfo.API)
+2026-02-10 17:22:00.832 +03:00 [DBG] Executed controller factory for controller WeatherInfo.API.Controllers.WeatherController (WeatherInfo.API)
+2026-02-10 17:22:00.833 +03:00 [DBG] Attempting to bind parameter 'city' of type 'System.String' ...
+2026-02-10 17:22:00.834 +03:00 [DBG] Attempting to bind parameter 'city' of type 'System.String' using the name 'city' in request data ...
+2026-02-10 17:22:00.835 +03:00 [DBG] Done attempting to bind parameter 'city' of type 'System.String'.
+2026-02-10 17:22:00.836 +03:00 [DBG] Done attempting to bind parameter 'city' of type 'System.String'.
+2026-02-10 17:22:00.836 +03:00 [DBG] Attempting to validate the bound parameter 'city' of type 'System.String' ...
+2026-02-10 17:22:00.837 +03:00 [DBG] Done attempting to validate the bound parameter 'city' of type 'System.String'.
+2026-02-10 17:22:00.838 +03:00 [DBG] Attempting to bind parameter 'date' of type 'System.Nullable`1[System.DateOnly]' ...
+2026-02-10 17:22:00.839 +03:00 [DBG] Done attempting to bind parameter 'date' of type 'System.Nullable`1[System.DateOnly]'.
+2026-02-10 17:22:00.839 +03:00 [DBG] Attempting to validate the bound parameter 'date' of type 'System.Nullable`1[System.DateOnly]' ...
+2026-02-10 17:22:00.840 +03:00 [DBG] Done attempting to validate the bound parameter 'date' of type 'System.Nullable`1[System.DateOnly]'.
+2026-02-10 17:22:00.841 +03:00 [INF] Endpoint = day, City = Москва, Date = 2026-02-05, Latency = 0ms, CacheHit = TRUE
+2026-02-10 17:22:00.870 +03:00 [DBG] Entity Framework Core 8.0.0 initialized 'WeatherInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.0' with options: None
+2026-02-10 17:22:00.872 +03:00 [DBG] 'WeatherInfoContext' generated a temporary value for the property 'WeatherRequestLog.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-02-10 17:22:00.873 +03:00 [DBG] Context 'WeatherInfoContext' started tracking 'WeatherRequestLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-02-10 17:22:00.874 +03:00 [DBG] SaveChanges starting for 'WeatherInfoContext'.
+2026-02-10 17:22:00.875 +03:00 [DBG] DetectChanges starting for 'WeatherInfoContext'.
+2026-02-10 17:22:00.875 +03:00 [DBG] DetectChanges completed for 'WeatherInfoContext'.
+2026-02-10 17:22:00.876 +03:00 [DBG] Creating DbConnection.
+2026-02-10 17:22:00.877 +03:00 [DBG] Created DbConnection. (0ms).
+2026-02-10 17:22:00.877 +03:00 [DBG] Opening connection to database 'main' on server 'WeatherInfo.db'.
+2026-02-10 17:22:00.878 +03:00 [DBG] Opened connection to database 'main' on server 'C:\Sergey\WeatherInfo\WeatherInfo.API\WeatherInfo.db'.
+2026-02-10 17:22:00.879 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-10 17:22:00.879 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-02-10 17:22:00.880 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-02-10 17:22:00.881 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (Size = 6), @p2='?' (DbType = Date), @p3='?' (Size = 3), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "WeatherRequests" ("CacheHit", "City", "Date", "Endpoint", "LatencyMs", "StatusCode", "TimestampUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2026-02-10 17:22:00.882 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (Size = 6), @p2='?' (DbType = Date), @p3='?' (Size = 3), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "WeatherRequests" ("CacheHit", "City", "Date", "Endpoint", "LatencyMs", "StatusCode", "TimestampUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2026-02-10 17:22:00.883 +03:00 [DBG] The foreign key property 'WeatherRequestLog.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-02-10 17:22:00.885 +03:00 [DBG] Closing data reader to 'main' on server 'C:\Sergey\WeatherInfo\WeatherInfo.API\WeatherInfo.db'.
+2026-02-10 17:22:00.886 +03:00 [DBG] A data reader for 'main' on server 'C:\Sergey\WeatherInfo\WeatherInfo.API\WeatherInfo.db' is being disposed after spending 2ms reading results.
+2026-02-10 17:22:00.886 +03:00 [DBG] Closing connection to database 'main' on server 'C:\Sergey\WeatherInfo\WeatherInfo.API\WeatherInfo.db'.
+2026-02-10 17:22:00.887 +03:00 [DBG] Closed connection to database 'main' on server 'WeatherInfo.db' (0ms).
+2026-02-10 17:22:00.888 +03:00 [DBG] An entity of type 'WeatherRequestLog' tracked by 'WeatherInfoContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-02-10 17:22:00.889 +03:00 [DBG] SaveChanges completed for 'WeatherInfoContext' with 1 entities written to the database.
+2026-02-10 17:22:00.890 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-02-10 17:22:00.891 +03:00 [DBG] No information found on request to perform content negotiation.
+2026-02-10 17:22:00.892 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-02-10 17:22:00.892 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-02-10 17:22:00.893 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-02-10 17:22:00.894 +03:00 [INF] Executing OkObjectResult, writing value of type 'WeatherInfo.API.Dtos.WeatherDayDto'.
+2026-02-10 17:22:00.895 +03:00 [INF] Executed action WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API) in 64.6993ms
+2026-02-10 17:22:00.896 +03:00 [INF] Executed endpoint 'WeatherInfo.API.Controllers.WeatherController.GetWeatherByDate (WeatherInfo.API)'
+2026-02-10 17:22:00.897 +03:00 [DBG] Connection id "0HNJ8LUN9BT73" completed keep alive response.
+2026-02-10 17:22:00.898 +03:00 [DBG] 'WeatherInfoContext' disposed.
+2026-02-10 17:22:00.899 +03:00 [DBG] Disposing connection to database 'main' on server 'WeatherInfo.db'.
+2026-02-10 17:22:00.900 +03:00 [DBG] Disposed connection to database 'main' on server 'WeatherInfo.db' (0ms).
+2026-02-10 17:22:00.900 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7198/api/weather/Москва?date=2026-02-05 - 200 null application/json; charset=utf-8 81.0908ms
