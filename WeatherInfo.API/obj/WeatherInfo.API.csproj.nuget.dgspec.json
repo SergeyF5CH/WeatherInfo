@@ -59,7 +59,7 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "AspNetCore.HealthChecks.Sqlite": {
+            "AspNetCore.HealthChecks.Npgsql": {
               "target": "Package",
               "version": "[8.0.1, )"
             },
@@ -84,10 +84,6 @@
               "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.0, )"
             },
@@ -116,6 +112,10 @@
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Polly": {
               "target": "Package",

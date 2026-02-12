@@ -35,8 +35,8 @@ namespace WeatherInfo.API.Controllers
                 return BadRequest("'from' must be earlier than 'to'");
             }
 
-            var fromUtc = from.Value.ToDateTime(TimeOnly.MinValue);
-            var toUtc = to.Value.ToDateTime(TimeOnly.MaxValue);
+            var fromUtc = DateTime.SpecifyKind(from.Value.ToDateTime(TimeOnly.MinValue), DateTimeKind.Utc);
+            var toUtc = DateTime.SpecifyKind(to.Value.ToDateTime(TimeOnly.MaxValue), DateTimeKind.Utc);
 
             var result = await _context.WeatherRequests
                 .Where(x => x.TimestampUtc >= fromUtc && x.TimestampUtc <= toUtc)
@@ -74,8 +74,8 @@ namespace WeatherInfo.API.Controllers
                 return BadRequest("Page and pageSize must be positive");
             }
 
-            var fromUtc = from.Value.ToDateTime(TimeOnly.MinValue);
-            var toUtc = to.Value.ToDateTime(TimeOnly.MaxValue);
+            var fromUtc = DateTime.SpecifyKind(from.Value.ToDateTime(TimeOnly.MinValue), DateTimeKind.Utc);
+            var toUtc = DateTime.SpecifyKind(to.Value.ToDateTime(TimeOnly.MaxValue), DateTimeKind.Utc);
 
             var query = _context.WeatherRequests
                 .Where(x => x.TimestampUtc >= fromUtc && x.TimestampUtc <= toUtc)

@@ -13,6 +13,7 @@ using WeatherInfo.API.Middleware;
 using WeatherInfo.API.ModelBinders;
 using WeatherInfo.API.Options;
 using WeatherInfo.API.Services;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
@@ -27,7 +28,7 @@ builder.Host.UseSerilog();
 builder.Services.AddHealthChecks()
     .AddCheck("self", () => HealthCheckResult.Healthy("Service is running"))
     .AddDbContextCheck<WeatherInfoContext>(
-        name: "sqlite-db",
+        name: "postgres-db",
         failureStatus: HealthStatus.Unhealthy)
     .AddCheck<MemoryCacheHealthCheck>(
         name: "memory-cache",
@@ -63,7 +64,7 @@ builder.Services.AddRateLimiter(options =>
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<WeatherInfoContext>(
-    dbContextOptions => dbContextOptions.UseSqlite(
+    dbContextOptions => dbContextOptions.UseNpgsql(
         builder.Configuration["ConnectionStrings:WeatherInfoDBConnectionString"]));
 
 builder.Services.AddSwaggerGen();
