@@ -80,7 +80,7 @@ namespace WeatherInfo.API.Services
             return result;
         }
 
-        public async Task<WeatherWeekDto> GetWeatherWeekAsync(string city)
+        public async Task<WeatherWeekDto> GetWeatherWeekAsync(string city, bool logRequest = true)
         {
             var sw = Stopwatch.StartNew();
 
@@ -119,13 +119,17 @@ namespace WeatherInfo.API.Services
                 });
 
             sw.Stop();
-            await LogRequestAsync(
-                "week", 
-                cityNormalized, 
-                null, 
-                cacheHit,
-                (int)sw.ElapsedMilliseconds,
-                200);
+
+            if (logRequest)
+            {
+                await LogRequestAsync(
+                    "week",
+                    cityNormalized,
+                    null,
+                    cacheHit,
+                    (int)sw.ElapsedMilliseconds,
+                    200);
+            }
 
             return result;
         }
@@ -143,7 +147,7 @@ namespace WeatherInfo.API.Services
                 cacheKey,
                 async () =>
                 {
-                    var weekData = await GetWeatherWeekAsync(cityNormalized);
+                    var weekData = await GetWeatherWeekAsync(cityNormalized, logRequest: false);
                     return new WeatherWeekChartDto
                     {
                         City = weekData.City,
