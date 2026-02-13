@@ -1,0 +1,339 @@
+{
+  "info": {
+    "_postman_id": "c5f34a59-071f-44fb-b00e-b13f457878b1",
+    "name": "WeatherInfo.API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43594147",
+    "_collection_link": "https://go.postman.co/collection/43594147-c5f34a59-071f-44fb-b00e-b13f457878b1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GetWeatherByDate",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/weather/Тамбов?date=2026-02-11",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "weather",
+            "Тамбов"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "2026-02-11"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetWeatherByDate Not Modified",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "If-None-Match",
+            "value": "\"3E08883593395C4A4CE239B5F8D23AE5A6F085DE00457E4394F2D284B2A72C7D\"",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/weather/Москва?date=2026-02-05",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "weather",
+            "Москва"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "2026-02-05"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetWeatherByWeek",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/weather/Malaga/week",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "weather",
+            "Malaga",
+            "week"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetWeatherByWeek Not Modified",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "If-None-Match",
+            "value": "\"6438E22513FC24A6A4C2F6C7CD5BF6C26B1CF4DF75BE9A5353D1EFBAA37F261E\"",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/weather/Saint%20Petersburg/week",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "weather",
+            "Saint%20Petersburg",
+            "week"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetTopCities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/stats/top-cities?from=2026-02-12&to=2026-02-12&limit=10",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "stats",
+            "top-cities"
+          ],
+          "query": [
+            {
+              "key": "from",
+              "value": "2026-02-12"
+            },
+            {
+              "key": "to",
+              "value": "2026-02-12"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetResult",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/stats/requests?from=2026-02-12&to=2026-02-13&page=1&pageSize=10",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "stats",
+            "requests"
+          ],
+          "query": [
+            {
+              "key": "from",
+              "value": "2026-02-12"
+            },
+            {
+              "key": "to",
+              "value": "2026-02-13"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "pageSize",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "/static/icons/{code}.png",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/static/icons/thunderstorm.png",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "static",
+            "icons",
+            "thunderstorm.png"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Error 404: City not found",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/weather/Алохомора?date=2026-02-05",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "weather",
+            "Алохомора"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "2026-02-05"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Error 400: Invalid date/format",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/weather/Москва?date=02-052026",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "weather",
+            "Москва"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "02-052026"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Error 400: out of supported range",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:{{portNumber}}/api/weather/Москва?date=2020-02-05",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "{{portNumber}}",
+          "path": [
+            "api",
+            "weather",
+            "Москва"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "2020-02-05"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "HealthCheck: /health/ready",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7198/api/health/ready",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7198",
+          "path": [
+            "api",
+            "health",
+            "ready"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "HealthCheck: /health/live",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7198/api/health/live",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7198",
+          "path": [
+            "api",
+            "health",
+            "live"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
