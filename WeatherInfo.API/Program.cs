@@ -64,8 +64,14 @@ builder.Services.AddRateLimiter(options =>
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddDbContext<WeatherInfoContext>(
-    dbContextOptions => dbContextOptions.UseNpgsql(
-        builder.Configuration["ConnectionStrings:WeatherInfoDBConnectionString"]));
+    dbContextOptions =>
+    {
+        var connctionString = builder.Configuration
+            .GetConnectionString("WeatherInfoDBConnectionString");
+
+        dbContextOptions.UseNpgsql(connctionString, options =>
+            options.EnableRetryOnFailure());
+    });
 
 builder.Services.AddSwaggerGen();
 
@@ -169,7 +175,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseMiddleware<ErrorHandlingMiddleware>();
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
@@ -186,5 +192,11 @@ app.MapHealthChecks("/health/ready", new HealthCheckOptions
 {
     Predicate = check => check.Name != "self"
 });
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<WeatherInfoContext>();
+    db.Database.Migrate();
+}
 
 app.Run();

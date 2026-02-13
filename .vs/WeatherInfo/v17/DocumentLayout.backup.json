@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Sergey\\WeatherInfo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,20 +43,8 @@
       "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\logs\\weatherinfo20260211.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\logs\\weatherinfo20260211.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|solutionrelative:weatherinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A0775D1-7682-4837-8BC7-A8E70EC576C1}|WeatherInfo.API\\WeatherInfo.API.csproj|c:\\sergey\\weatherinfo\\weatherinfo.api\\weatherinfo.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -230,7 +230,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 43,
+          "SelectedChildIndex": 53,
           "Children": [
             {
               "$type": "Bookmark",
@@ -238,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "weatherinfo20260212.txt",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\logs\\weatherinfo20260212.txt",
               "RelativeDocumentMoniker": "WeatherInfo.API\\logs\\weatherinfo20260212.txt",
@@ -246,8 +246,7 @@
               "RelativeToolTip": "WeatherInfo.API\\logs\\weatherinfo20260212.txt",
               "ViewState": "AgIAAKkLAAAAAAAAAAAAALYLAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-02-12T18:37:38.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T18:37:38.586Z"
             },
             {
               "$type": "Document",
@@ -263,15 +262,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "WeatherInfo.API\\appsettings.Development.json",
               "ToolTip": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\appsettings.Development.json",
               "RelativeToolTip": "WeatherInfo.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-12T17:04:27.374Z"
+              "WhenOpened": "2026-02-12T17:04:27.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -299,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "weatherinfo20260211.txt",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\logs\\weatherinfo20260211.txt",
               "RelativeDocumentMoniker": "WeatherInfo.API\\logs\\weatherinfo20260211.txt",
@@ -311,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CitiesController.cs",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Controllers\\CitiesController.cs",
               "RelativeDocumentMoniker": "WeatherInfo.API\\Controllers\\CitiesController.cs",
@@ -395,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "WeatherRequestDto.cs",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Dtos\\WeatherRequestDto.cs",
               "RelativeDocumentMoniker": "WeatherInfo.API\\Dtos\\WeatherRequestDto.cs",
@@ -403,8 +403,7 @@
               "RelativeToolTip": "WeatherInfo.API\\Dtos\\WeatherRequestDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T12:53:30.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-10T12:53:30.629Z"
             },
             {
               "$type": "Document",
@@ -528,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\appsettings.json",
               "RelativeDocumentMoniker": "WeatherInfo.API\\appsettings.json",
@@ -536,7 +535,8 @@
               "RelativeToolTip": "WeatherInfo.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-09T08:45:51.425Z"
+              "WhenOpened": "2026-02-09T08:45:51.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -744,12 +744,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "WeatherService.cs",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Services\\WeatherService.cs",
               "RelativeDocumentMoniker": "WeatherInfo.API\\Services\\WeatherService.cs",
-              "ToolTip": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Services\\WeatherService.cs*",
-              "RelativeToolTip": "WeatherInfo.API\\Services\\WeatherService.cs*",
+              "ToolTip": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Services\\WeatherService.cs",
+              "RelativeToolTip": "WeatherInfo.API\\Services\\WeatherService.cs",
               "ViewState": "AgIAAG8AAAAAAAAAAAAqwHgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T12:05:25.792Z",
@@ -757,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "IWeatherService.cs",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Services\\IWeatherService.cs",
               "RelativeDocumentMoniker": "WeatherInfo.API\\Services\\IWeatherService.cs",
@@ -765,12 +765,11 @@
               "RelativeToolTip": "WeatherInfo.API\\Services\\IWeatherService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T12:03:12.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T12:03:12.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "StatsRequestDto.cs",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Dtos\\StatsRequestDto.cs",
               "RelativeDocumentMoniker": "WeatherInfo.API\\Dtos\\StatsRequestDto.cs",
@@ -778,8 +777,7 @@
               "RelativeToolTip": "WeatherInfo.API\\Dtos\\StatsRequestDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T11:36:29.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T11:36:29.325Z"
             },
             {
               "$type": "Document",
@@ -807,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "StatsController.cs",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Controllers\\StatsController.cs",
               "RelativeDocumentMoniker": "WeatherInfo.API\\Controllers\\StatsController.cs",
@@ -815,8 +813,7 @@
               "RelativeToolTip": "WeatherInfo.API\\Controllers\\StatsController.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAqwF0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T14:33:44.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T14:33:44.02Z"
             },
             {
               "$type": "Document",
@@ -868,15 +865,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Program.cs",
               "RelativeDocumentMoniker": "WeatherInfo.API\\Program.cs",
               "ToolTip": "C:\\Sergey\\WeatherInfo\\WeatherInfo.API\\Program.cs",
               "RelativeToolTip": "WeatherInfo.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAqwLEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T11:21:03.936Z"
+              "WhenOpened": "2026-01-28T11:21:03.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
