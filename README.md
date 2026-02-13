@@ -25,24 +25,25 @@
 ## Список переменных окружения:
 
 БД:
-- 'CONNECTIONSTRING' - строка подключения к PostgreSQL:'Host=localhost;Port=5432;Database=WeatherInfoDb;Username=postgres;Password=123P@ssword123ITSWERYIMPORTANT'
-- 'DB_NAME' - 'WeatherInfoDb' 
+- CONNECTIONSTRING - строка подключения к PostgreSQL: 
+	'Host=localhost;Port=5432;Database=WeatherInfoDb;Username=postgres;Password=123P@ssword123ITSWERYIMPORTANT'
+- DB_NAME - WeatherInfoDb 
 
-- 'CACHE_WEATHERTTLMINUTES' - время жизни кэша погоды в минутах: '60'
-- 'CACHE_REFRESHAHEADMINUTES' - время обновления кэша заранее (refresh ahead): '10'
+- CACHE_WEATHERTTLMINUTES - время жизни кэша погоды в минутах: '60'
+- CACHE_REFRESHAHEADMINUTES - время обновления кэша заранее (refresh ahead): '10'
 
 Внешние сервисы:
-- 'OPENMETEO\_BASEURL' - URL внешнего API погоды: 'https://api.open-meteo.com/v1/forecast'
-- 'OPENMETEO\_TIMEZONE' - часовой пояс для запроса к Open-Meteo: 'Europe/London'
-- 'GEOCODING\_BASEURL' - URL сервиса геокодинга для резолва города: 'https://geocoding-api.open-meteo.com/v1/search'
-- 'GEOCODING\_LANGUAGE' - выставлен: 'ru'
+- OPENMETEO\_BASEURL - URL внешнего API погоды: 'https://api.open-meteo.com/v1/forecast'
+- OPENMETEO\_TIMEZONE - часовой пояс для запроса к Open-Meteo: 'Europe/London'
+- GEOCODING\_BASEURL - URL сервиса геокодинга для резолва города: 'https://geocoding-api.open-meteo.com/v1/search'
+- GEOCODING\_LANGUAGE - выставлен: 'ru'
 
 Конфигурация приложения:
-- 'ASPNETCORE\_ENVIRONMENT' - 'Development'
+- ASPNETCORE\_ENVIRONMENT - 'Development'
 
 Порты для локального запуска:
-- 'http' - 'http://localhost:5288'
-- 'https'- 'https://localhost:7198'
+- http - 'http://localhost:5288'
+- https - 'https://localhost:7198'
 
 ---
 
